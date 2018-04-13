@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./icon/iconfont.css">
+    <link rel="stylesheet" href="./dist/css/swiper.css">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <nav>
+                <ul>
+                    <li class="bor">精选</li>
+                    <li>爱看</li>
+                    <li>电视剧</li>
+                    <li>电影</li>
+                    <li>综艺</li>
+                    <li>少儿</li>
+                </ul>    
+                <a href="#"><i class="iconfont">&#xe6f9;</i></a>
+            </nav>    
+            <div class="ser">
+                <input type="text" placeholder="斗罗大陆"><i class="iconfont pos">&#xe729;</i>
+                <span><i class="iconfont">&#xe726;</i><i class="iconfont">&#xe726;</i><i class="iconfont">&#xe726;</i></span>
+            </div>
+        </header>
+        <section>
+            <div class="top">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/one.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/one.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/one.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+<script src="./js/zepto.js"></script>
+<script src="./dist/js/swiper.js"></script>
+<script>
+    $('header nav ul li').on('click',function(){
+        $(this).addClass('bor').siblings().removeClass('bor');
+    });
+    new Swiper('.swiper-container',{
+        autoplay:1000,
+        loop:true
+    })
+
+
+</script>
+</html>
